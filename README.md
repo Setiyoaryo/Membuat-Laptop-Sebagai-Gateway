@@ -21,7 +21,7 @@ Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All -All
 ```
 
-### Aktifkan NAT ke Network local Zero Tier
+### Aktifkan NAT ke Network lokal Zero Tier
 ```Bash
 New-NetNat -Name "ZTNAT" -InternalIPInterfaceAddressPrefix a.b.c.d/24
 ```
